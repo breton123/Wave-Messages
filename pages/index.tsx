@@ -1,14 +1,13 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Header from "../components/Header"
-import Chat from "../components/Chat"
-import { SessionProvider } from 'next-auth/react'
-import { RecoilRoot, useRecoilValue } from 'recoil';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Header from "../components/Header";
+import Chat from "../components/Chat";
+import { SessionProvider } from "next-auth/react";
+import { RecoilRoot, useRecoilValue } from "recoil";
 
 const Home: NextPage = () => {
-
   return (
-    <div className='bg-gray-300 h-screen flex flex-row'>
+    <div className="bg-[#393E46] h-screen flex flex-row">
       <RecoilRoot>
         <SessionProvider>
           <Header />
@@ -16,7 +15,7 @@ const Home: NextPage = () => {
         </SessionProvider>
       </RecoilRoot>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
